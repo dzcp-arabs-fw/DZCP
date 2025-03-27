@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Topics - DZCP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Advanced Topics in DZCP 🛠️</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="api.html">API</a>
+    </nav>
+</header>
+
+<section>
+    <h2>1️⃣ Hooks & Callbacks</h2>
+    <p>DZCP provides hooks for interacting with game events:</p>
+    <pre>
+GameEvents.OnPlayerDeath += (player) => 
+{
+    Console.WriteLine($"{player} has died.");
+};
+        </pre>
+
+    <h2>2️⃣ Networking & API</h2>
+    <p>DZCP includes a RESTful API for remote server management.</p>
+
+    <h2>3️⃣ Creating Custom Modules</h2>
+    <pre>
+using DZCP.Core;
+
+public class MyModule : IModule
+{
+    public void Initialize()
+    {
+        Console.WriteLine("[MyModule] Module initialized!");
+    }
+}
+        </pre>
+</section>
+
+<footer>
+    <p>© 2024 DZCP Framework - All rights reserved.</p>
+</footer>
+
+</body>
+</html>
