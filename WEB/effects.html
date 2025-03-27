@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects - DZCP Framework</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Effects in DZCP</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="events.html">Events</a>
+        <a href="api.html">API</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Applying Effects</h2>
+    <p>Use the effect system like this:</p>
+    <pre>
+using DZCP.Effects;
+
+public class SmokeEffectDemo
+{
+    public void TriggerSmoke()
+    {
+        GameEffects.PlaySmokeEffect(10.5f, 3.2f, -5.0f, 5.0f);
+    }
+}
+        </pre>
+</section>
+
+<footer>
+    <p>© 2024 DZCP Framework - All rights reserved.</p>
+</footer>
+
+</body>
+</html>

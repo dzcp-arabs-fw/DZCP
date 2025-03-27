@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - DZCP Framework</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Events in DZCP</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="effects.html">Effects</a>
+        <a href="api.html">API</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Handling Events</h2>
+    <p>Subscribe to events in DZCP like this:</p>
+    <pre>
+using DZCP.Platform;
+
+namespace DZCP.Events
+{
+    public static class EventHandlers
+    {
+        public static void RegisterEvents()
+        {
+            GameEvents.OnPlayerJoin += PlayerJoined;
+        }
+
+        private static void PlayerJoined(string playerName)
+        {
+            Console.WriteLine($"[DZCP] Player {playerName} has joined the server!");
+        }
+    }
+}
+        </pre>
+</section>
+
+<footer>
+    <p>© 2024 DZCP Framework - All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins - DZCP Framework</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Plugins in DZCP</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="effects.html">Effects</a>
+        <a href="api.html">API</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Creating a Basic Plugin</h2>
+    <p>To create a plugin in DZCP, follow this example:</p>
+    <pre>
+using DZCP.Bootstrap;
+using DZCP.Core;
+
+public class MyPlugin : IPlugin
+{
+    public void OnLoad()
+    {
+        Console.WriteLine("[MyPlugin] Plugin loaded successfully!");
+    }
+}
+        </pre>
+</section>
+
+<footer>
+    <p>© 2024 DZCP Framework - All rights reserved.</p>
+</footer>
+
+</body>
+</html>
